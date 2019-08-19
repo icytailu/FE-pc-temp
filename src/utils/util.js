@@ -40,7 +40,7 @@ const goReplace = (name, query = null) => {
  * 路由返回
  */
 const back = () => {
-  router.back();
+  window.history.length > 1 ? router.back() : router.push("/");
 };
 
 /**
